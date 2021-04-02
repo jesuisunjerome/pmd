@@ -10,8 +10,8 @@
 
     <title>Book app</title>
 
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="apple-touch-icon" href="">
+    <link rel="shortcut icon" sizes="32x32" href="img/about/Logo_ico.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="32x32" href="img/about/Logo_ico.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -41,7 +41,9 @@
     <!-- Menu principal -->
     <nav class="navbar navbar-expand-lg bg-white sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Logo</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/about/Logo.png" class="img-fluid" alt="Logo CRA">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMovil" aria-controls="navbarMovil" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
@@ -72,10 +74,11 @@
                 <div class="row w-100">
                     <div class="col-lg-5 col-md-10">
                         <h1>
-                            Lorem ipsum dolor sit amet, adipiscing.
+                            Ressources numériques
                         </h1>
                         <p>
-                            Tristique metus leo ipsum quis sapien gravida. Venenatis sed ultricies cras nisi quis nam.
+                            Quoi lire ensuite? Explorez notre catalogue: de véritables joyaux sont cachés dans notre bibliothèque!
+                            <!--Not sure what to read next? Explore our catalog: some real gems are hidden in our library.-->
                         </p>
                         <div id="busqueda" class="d-flex">
                             <input class="form-control" placeholder="Livres, auteurs...">
@@ -210,89 +213,215 @@
                     </h3>
                 </div>
                 <div class="row livres pt-5">
-                    <div class="col-lg-2 col-md-4 col-6 mb-5">
-                        <a href="#">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="img-card">
-                                        <img src="img/collection/livres/livre1.png" class="card-img-top mb-2" alt="">
+                    <div class="col-xxl-2 col-lg-3 col-md-4 col-6 mb-5">
+                        <div class="card">
+                            <a class="card-link" href="#">
+                            </a>
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card-img">
+                                        <img src="img/collection/livres/livre1.png" alt="">
                                     </div>
                                     <hr class="mb-2">
-                                    <p class="text-uppercase naranja mb-1 fw-bold">Auteur(s)</p>
-                                    <h6 class="text-uppercase azul-verde mb-0">Daniel P. Reid</h6>
+                                    <div class="card-content">
+                                        <p class="text-uppercase naranja mb-1 fw-bold">Auteur(s)</p>
+                                        <h6 class="text-uppercase azul-verde mb-0">Daniel P. Reid</h6>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-header">
+                                        <p class="text-uppercase azul-verde fw-bold mb-0">
+                                            La médecine chinoise par les herbes
+                                        </p>
+                                        <p class="small text-uppercase kaki">
+                                            daniel P. Reid
+                                        </p>
+                                        <hr>
+                                    </div>
+                                    <p class="light small ellipsis">
+                                        Consequat lacus et, proin nunc nullam. Pellentesque in pulvinar euismod lectus consectetur. Et facilisis sed vitae curabitur ac. Pellentesque nec, egestas accumsan nisl tellus, enim, pretium. A dignissim vitae adipiscing nibh.
+                                    </p>
+                                    <a href="#" class="naranja text-uppercase small">Plus
+                                        <img src="img/arrow-right.svg" alt="">
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-6 mb-5">
-                        <a href="#">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="img-card">
-                                        <img src="img/collection/livres/image%2012.png" class="card-img-top mb-2" alt="">
+                    <div class="col-xxl-2 col-lg-3 col-md-4 col-6 mb-5">
+                        <div class="card">
+                            <a class="card-link" href="#">
+                            </a>
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card-img">
+                                        <img src="img/collection/livres/image%2012.png" alt="">
                                     </div>
                                     <hr class="mb-2">
-                                    <p class="text-uppercase naranja mb-1 fw-bold">Auteur(s)</p>
-                                    <h6 class="text-uppercase azul-verde mb-0">Fabian Scheidler</h6>
+                                    <div class="card-content">
+                                        <p class="text-uppercase naranja mb-1 fw-bold">Auteur(s)</p>
+                                        <h6 class="text-uppercase azul-verde mb-0">Fabian Scheidler</h6>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-header">
+                                        <p class="text-uppercase azul-verde fw-bold mb-0">
+                                            La médecine chinoise par les herbes
+                                        </p>
+                                        <p class="small text-uppercase kaki">
+                                            daniel P. Reid
+                                        </p>
+                                        <hr>
+                                    </div>
+                                    <p class="light small ellipsis">
+                                        Consequat lacus et, proin nunc nullam. Pellentesque in pulvinar euismod lectus consectetur. Et facilisis sed vitae curabitur ac. Pellentesque nec, egestas accumsan nisl tellus, enim, pretium. A dignissim vitae adipiscing nibh.
+                                    </p>
+                                    <a href="#" class="naranja text-uppercase small">Plus
+                                        <img src="img/arrow-right.svg" alt="">
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-6 mb-5">
-                        <a href="#">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="img-card">
-                                        <img src="img/collection/livres/livre3.png" class="card-img-top mb-2" alt="">
+                    <div class="col-xxl-2 col-lg-3 col-md-4 col-6 mb-5">
+                        <div class="card">
+                            <a class="card-link" href="#">
+                            </a>
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card-img">
+                                        <img src="img/collection/livres/livre3.png" alt="">
                                     </div>
                                     <hr class="mb-2">
-                                    <p class="text-uppercase naranja mb-1 fw-bold">Auteur(s)</p>
-                                    <h6 class="text-uppercase azul-verde mb-0">LOUIS GUSTAVE RICHELOT</h6>
+                                    <div class="card-content">
+                                        <p class="text-uppercase naranja mb-1 fw-bold">Auteur(s)</p>
+                                        <h6 class="text-uppercase azul-verde mb-0">LOUIS GUSTAVE RICHELOT</h6>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-header">
+                                        <p class="text-uppercase azul-verde fw-bold mb-0">
+                                            La médecine chinoise par les herbes
+                                        </p>
+                                        <p class="small text-uppercase kaki">
+                                            daniel P. Reid
+                                        </p>
+                                        <hr>
+                                    </div>
+                                    <p class="light small ellipsis">
+                                        Consequat lacus et, proin nunc nullam. Pellentesque in pulvinar euismod lectus consectetur. Et facilisis sed vitae curabitur ac. Pellentesque nec, egestas accumsan nisl tellus, enim, pretium. A dignissim vitae adipiscing nibh.
+                                    </p>
+                                    <a href="#" class="naranja text-uppercase small">Plus
+                                        <img src="img/arrow-right.svg" alt="">
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-6 mb-5">
-                        <a href="#">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="img-card">
-                                        <img src="img/collection/livres/livre4.png" class="card-img-top mb-2" alt="">
+                    <div class="col-xxl-2 col-lg-3 col-md-4 col-6 mb-5">
+                        <div class="card">
+                            <a class="card-link" href="#">
+                            </a>
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card-img">
+                                        <img src="img/collection/livres/livre4.png" alt="">
                                     </div>
                                     <hr class="mb-2">
-                                    <p class="text-uppercase naranja mb-1 fw-bold">Auteur(s)</p>
-                                    <h6 class="text-uppercase azul-verde mb-0">DOMINIQUE GOSSOT</h6>
+                                    <div class="card-content">
+                                        <p class="text-uppercase naranja mb-1 fw-bold">Auteur(s)</p>
+                                        <h6 class="text-uppercase azul-verde mb-0">DOMINIQUE GOSSOT</h6>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-header">
+                                        <p class="text-uppercase azul-verde fw-bold mb-0">
+                                            La médecine chinoise par les herbes
+                                        </p>
+                                        <p class="small text-uppercase kaki">
+                                            daniel P. Reid
+                                        </p>
+                                        <hr>
+                                    </div>
+                                    <p class="light small ellipsis">
+                                        Consequat lacus et, proin nunc nullam. Pellentesque in pulvinar euismod lectus consectetur. Et facilisis sed vitae curabitur ac. Pellentesque nec, egestas accumsan nisl tellus, enim, pretium. A dignissim vitae adipiscing nibh.
+                                    </p>
+                                    <a href="#" class="naranja text-uppercase small">Plus
+                                        <img src="img/arrow-right.svg" alt="">
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-6 mb-5">
-                        <a href="#">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="img-card">
-                                        <img src="img/collection/livres/image%2010.png" class="card-img-top mb-2" alt="">
+                    <div class="col-xxl-2 col-lg-3 col-md-4 col-6 mb-5">
+                        <div class="card">
+                            <a class="card-link" href="#">
+                            </a>
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card-img">
+                                        <img src="img/collection/livres/image%2010.png" alt="">
                                     </div>
                                     <hr class="mb-2">
-                                    <p class="text-uppercase naranja mb-1 fw-bold">Auteur(s)</p>
-                                    <h6 class="text-uppercase azul-verde mb-0">Isabelle Ferreras</h6>
+                                    <div class="card-content">
+                                        <p class="text-uppercase naranja mb-1 fw-bold">Auteur(s)</p>
+                                        <h6 class="text-uppercase azul-verde mb-0">Isabelle Ferreras</h6>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-header">
+                                        <p class="text-uppercase azul-verde fw-bold mb-0">
+                                            La médecine chinoise par les herbes
+                                        </p>
+                                        <p class="small text-uppercase kaki">
+                                            daniel P. Reid
+                                        </p>
+                                        <hr>
+                                    </div>
+                                    <p class="light small ellipsis">
+                                        Consequat lacus et, proin nunc nullam. Pellentesque in pulvinar euismod lectus consectetur. Et facilisis sed vitae curabitur ac. Pellentesque nec, egestas accumsan nisl tellus, enim, pretium. A dignissim vitae adipiscing nibh.
+                                    </p>
+                                    <a href="#" class="naranja text-uppercase small">Plus
+                                        <img src="img/arrow-right.svg" alt="">
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-6 mb-5">
-                        <a href="#">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="img-card">
-                                        <img src="img/collection/livres/image%2016.png" class="card-img-top mb-2" alt="">
+                    <div class="col-xxl-2 col-lg-3 col-md-4 col-6 mb-5">
+                        <div class="card">
+                            <a class="card-link" href="#">
+                            </a>
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card-img">
+                                        <img src="img/collection/livres/image%2016.png" alt="">
                                     </div>
                                     <hr class="mb-2">
-                                    <p class="text-uppercase naranja mb-1 fw-bold">Auteur(s)</p>
-                                    <h6 class="text-uppercase azul-verde mb-0">Delphine Bauer</h6>
+                                    <div class="card-content">
+                                        <p class="text-uppercase naranja mb-1 fw-bold">Auteur(s)</p>
+                                        <h6 class="text-uppercase azul-verde mb-0">Delphine Bauer</h6>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-header">
+                                        <p class="text-uppercase azul-verde fw-bold mb-0">
+                                            La médecine chinoise par les herbes
+                                        </p>
+                                        <p class="small text-uppercase kaki">
+                                            daniel P. Reid
+                                        </p>
+                                        <hr>
+                                    </div>
+                                    <p class="light small ellipsis">
+                                        Consequat lacus et, proin nunc nullam. Pellentesque in pulvinar euismod lectus consectetur. Et facilisis sed vitae curabitur ac. Pellentesque nec, egestas accumsan nisl tellus, enim, pretium. A dignissim vitae adipiscing nibh.
+                                    </p>
+                                    <a href="#" class="naranja text-uppercase small">Plus
+                                        <img src="img/arrow-right.svg" alt="">
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -304,12 +433,12 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-5 text-center text-lg-start order-1 order-lg-0">
-                    <h5 class="text-uppercase fw-bold mb-3">Nom ou Logo</h5>
+                    <h5 class="text-uppercase fw-bold mb-3">
+                        <img src="img/about/Logo_dark.png" class="img-fluid" alt="Logo CRA">
+                    </h5>
 
                     <p class="mb-0">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                        molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                        voluptatem veniam, est atque cumque eum delectus sint!
+                        Commission de Recherches et des Affaires Académiques: Découvrez quelque chose de nouveau!
                     </p>
                 </div>
                 <div class="col-lg-7 text-center text-lg-end mb-4 mb-lg-0">
@@ -349,6 +478,4 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
-</body>
-
-</html>
+</body></html>
