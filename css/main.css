@@ -162,7 +162,19 @@ NAVBAR
 HERO
 **********************************************************/
 #hero-accueil {
+    position: relative;
     background: linear-gradient(rgba(0, 0, 0, .70), rgba(0, 0, 0, .70)), url(../img/accueil/hero.png) no-repeat center;
+}
+
+#hero-accueil::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../img/sgv.svg);
+    background-size: 100%;
 }
 
 #hero-about {
@@ -452,3 +464,62 @@ COLLECTION
         display: block !important;
     }
 }
+
+
+
+
+
+.livres .card {
+    position: relative;
+    overflow: hidden;
+}
+
+.livres .card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.livres .card-back {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 18px;
+    transition: transform .4s cubic-bezier(.48, -0.28, .41, 1.4);
+    transform: translateY(100%);
+    overflow: hidden;
+    background-color: var(--color-dark);
+}
+
+.livres .card:hover .card-back {
+    top: 0;
+    transform: translateY(0);
+}
+
+.livres .card-back .ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+.card-front .card-img,
+.livres .img-card{
+    position: relative;
+    width: 100%;
+    height: 260px;
+}
+
+    .card-front .card-img img,
+    .livres .img-card img {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: calc(.25rem - 1px);
+        border-top-right-radius: calc(.25rem - 1px);
+        /*    object-fit: cover;*/
+    }
