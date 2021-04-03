@@ -81,6 +81,26 @@ a:hover {
     color: var(--color-naranja);
 }
 
+.btn-naranja {
+    color: var(--color-light);
+    background-color: #f27256de;
+}
+
+.btn-naranja:hover {
+    color: #fff;
+    background-color: var(--color-naranja);
+}
+
+.btn-azul-verde {
+    color: var(--color-light);
+    background-color: #165c7de0;
+}
+
+.btn-azul-verde:hover {
+    color: #fff;
+    background-color: var(--color-azul-verde);
+}
+
 .titulo-section h3 {
     display: flex;
     align-items: center;
@@ -164,17 +184,6 @@ HERO
 #hero-accueil {
     position: relative;
     background: linear-gradient(rgba(0, 0, 0, .70), rgba(0, 0, 0, .70)), url(../img/accueil/hero.png) no-repeat center;
-}
-
-#hero-accueil::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background: url(../img/sgv.svg);
-    background-size: 100%;
 }
 
 #hero-about {
@@ -509,17 +518,17 @@ COLLECTION
 }
 
 .card-front .card-img,
-.livres .img-card{
+.livres .img-card {
     position: relative;
     width: 100%;
     height: 260px;
 }
 
-    .card-front .card-img img,
-    .livres .img-card img {
-        width: 100%;
-        height: 100%;
-        border-top-left-radius: calc(.25rem - 1px);
-        border-top-right-radius: calc(.25rem - 1px);
-        /*    object-fit: cover;*/
-    }
+.card-front .card-img img,
+.livres .img-card img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    /*    object-fit: cover;*/
+}
